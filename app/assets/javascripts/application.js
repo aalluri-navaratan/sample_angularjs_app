@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require ./bower_components/
+//= require_tree ../../../assets/javascripts/../../../
+//= require sample_angularjs_app/app/assets/javascripts/sample_angularjs_app/controllers/app
 //= require_tree .

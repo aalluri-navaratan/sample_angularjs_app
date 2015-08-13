@@ -144,7 +144,6 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  coffee-rails (~> 4.1.0)
   database_cleaner
   jbuilder (~> 2.0)
   jquery-rails
