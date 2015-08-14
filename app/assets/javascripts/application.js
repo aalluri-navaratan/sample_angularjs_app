@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrap
+
 
 // bower_components files
 
@@ -26,6 +26,7 @@
 // Angular JS Root Directory
 
 //= require_tree ./sample_angularjs_app/controllers
-//= require_tree ./sample_angularjs_app/views
 //= require_tree ./sample_angularjs_app/services
+//= require_tree ./sample_angularjs_app/views
+
 //= require_tree .
