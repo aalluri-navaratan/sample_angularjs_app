@@ -49,11 +49,12 @@
 //=require jquery/dist/jquery
 
 
-
-
 // Angular JS Root Directory
 
 //= require_tree ./sample_angularjs_app/controllers
+// BASE CONTROLLER IS APP
+//=require ./sample_angularjs_app/controllers/app
+
 //= require_tree ./sample_angularjs_app/services
 //= require_tree ./sample_angularjs_app/views
 

@@ -1,7 +1,10 @@
 class StudentsController < ApplicationController
 	
 	def index
-		#render :text => " aneel"
+		# render :text => " aneel"
+
+		@students = Student.all
+		#	render :json => @students.inspect
 	end
 
 	def create	
