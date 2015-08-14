@@ -22,30 +22,32 @@
 //= require bootstrap/dist/js/bootstrap
 //= require jquery.validate/dist/jquery.validate
 //= require lodash/lodash
-
 // bower_components files for Gumby CSS Frame Work
 
-//= require gumby/js/libs/modernizr-2.6.2.min
-//= require jquery2.0.2.min
-//= require gumby/js/libs/jquery-2.0.2.min
-
-//= require gumby/js/libs/gumby
-//= require gunmby/js/libs/ui/gumby.retina
-//= require gumby/js/libs/ui/gumby.fixed
-//= require gumby/js/libs/ui/gumby.skiplink
-//= require gumby/js/libs/ui/gumby.toggleswitch
-//= require gumby/js/libs/ui/gumby.checkbox
-//= require gumby/js/libs/ui/gumby.radiobtn
-//= require gumby/js/libs/ui/gumby.tabs
-//= require gumby/js/libs/ui/gumby.navbar
-//= require gumby/js/libs/ui/jquery.validation
-
-// FOR UI LIBRARY
-//= require gumby/js/libs/gumby.init
 
 // SOME PLIGINS
 //= require gumby/js/plugins
 //= require gumby/js/main
+
+// FOR UI LIBRARY
+//= require gumby/js/libs/gumby
+//= require gumby/js/libs/gumby.init
+//= require gumby/js/libs/jquery-1.10.1.min
+//= require gumby/js/libs/jquery-2.0.2.min
+//= require gumby/js/libs/modernizr-2.6.2.min
+
+//= require gumby/js/libs/ui/gumby.checkbox
+//= require gumby/js/libs/ui/gumby.fixed
+//= require gumby/js/libs/ui/gumby.navbar
+//= require gumby/js/libs/ui/gumby.radiobtn
+//= require gumby/js/libs/ui/gumby.retina
+//= require gumby/js/libs/ui/gumby.skiplink
+//= require gumby/js/libs/ui/gumby.tabs
+//= require gumby/js/libs/ui/gumby.toggleswitch
+//= require gumby/js/libs/ui/jquery.validation
+
+//=require jquery/dist/jquery
+
 
 
 
