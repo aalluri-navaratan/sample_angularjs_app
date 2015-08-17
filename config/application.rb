@@ -8,7 +8,7 @@ Bundler.require(*Rails.groups)
 
 module SampleAngularjsApp
   class Application < Rails::Application
-    #config.assets.enabled = true
+    config.assets.enabled = true
 
 
     # Settings in config/environments/* take precedence over those specified here.

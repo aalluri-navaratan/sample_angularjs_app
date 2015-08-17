@@ -14,28 +14,29 @@
 //= require jquery_ujs
 //= require turbolinks
 
-
-// bower_components files for Angular JS
-
+// *** ANGULAR JS PLUGINS ***
+//= require bootstrap/dist/js/bootstrap
 //= require angular/angular
 //= require angular-ui-router/release/angular-ui-router
 //= require bootstrap/dist/js/bootstrap
 //= require jquery.validate/dist/jquery.validate
 //= require lodash/lodash
-// bower_components files for Gumby CSS Frame Work
 
-
-// SOME PLIGINS
+// *** BOWER_COMPONENTS DIRECTORY FOR GUMBY CSS FRAMEWORK ***
+// *** GUMBY PLIGINS ***
+//=require gumby/js/libs/modernizr-2.6.2.min
 //= require gumby/js/plugins
+//= require gumby/gumby.min
 //= require gumby/js/main
 
-// FOR UI LIBRARY
+// *** FOR GUMBY UI LIBRARY ***
+// *** PATH : gumby/js/libs/ui ***
 //= require gumby/js/libs/gumby
 //= require gumby/js/libs/gumby.init
-//= require gumby/js/libs/jquery-1.10.1.min
+// require gumby/js/libs/jquery-1.10.1.min
 //= require gumby/js/libs/jquery-2.0.2.min
-//= require gumby/js/libs/modernizr-2.6.2.min
 
+// *** PATH : gumby/js/libs/ui ***
 //= require gumby/js/libs/ui/gumby.checkbox
 //= require gumby/js/libs/ui/gumby.fixed
 //= require gumby/js/libs/ui/gumby.navbar
@@ -48,14 +49,13 @@
 
 //=require jquery/dist/jquery
 
-
-// Angular JS Root Directory
-
+// *** ANGULAR JS DIRECTORY ***
+// *** BASE CONTROLLERS FOR ANGULAR ***
 //= require_tree ./sample_angularjs_app/controllers
-// BASE CONTROLLER IS APP
-//=require ./sample_angularjs_app/controllers/app
 
+// *** BASE SERVICES FOR ANGULAR ***
 //= require_tree ./sample_angularjs_app/services
+
+// *** BASE VIEWS FOR ANGULAR ***
 //= require_tree ./sample_angularjs_app/views
 
-//= require_tree .

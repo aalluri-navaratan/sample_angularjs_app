@@ -1,33 +1,22 @@
-// app.js
 var routerApp = angular.module('routerApp', ['ui.router', 'ui.router.state']);
 routerApp.config(function($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/users');
-  $stateProvider
-  .state('root', {
+	$urlRouterProvider.otherwise('/students-information');
+	$stateProvider
+	.state('students', {
     url: "",
     abstract: true,
     views: {
       'header': {
-        templateUrl: '/assets/student/views/header.html',
-      }
-    }      
-  })
-  .state('root.view-profile', {
-    url: "/student/:student_id",
-    views: {
-      'container@': {
-        templateUrl: '/assets/student/views/students/show.html',
-        controller: 'StudentsCtrl'
+        templateUrl: '/assets/sample_angularjs_app/views/header.html',
       }
     }
   })
-  .state('student.profile-edit', {
-    url: "/student/:student_id/edit",
+  .state('students.views-info', {
+    url: "/students-information",
     views: {
       'container@': {
-        templateUrl: '/assets/student/views/students/edit.html'
+        templateUrl: '/assets/sample_angularjs_app/views/students/index.html'
       }
     }
   })
-// end of the router app
 });
