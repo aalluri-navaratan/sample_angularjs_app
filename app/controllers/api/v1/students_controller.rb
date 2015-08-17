@@ -6,6 +6,10 @@ module Api
     class StudentsController < ApplicationController
 
       def index
+        #render :json => "name"
+        @students = Student.all
+        #render :json => @students
+        render json: SampleAngularjsApp::JsonApi::Students::CollectionWriter.new.write('students', @students, params)
       end
 
       def create

@@ -1,6 +1,6 @@
 var routerApp = angular.module('routerApp', ['ui.router', 'ui.router.state']);
 routerApp.config(function($stateProvider, $urlRouterProvider) {
-	$urlRouterProvider.otherwise('/students-information');
+	$urlRouterProvider.otherwise('/students');
 	$stateProvider
 	.state('students', {
     url: "",
@@ -12,7 +12,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
     }
   })
   .state('students.views-info', {
-    url: "/students-information",
+    url: "/students",
     views: {
       'container@': {
         templateUrl: '/assets/sample_angularjs_app/views/students/index.html'

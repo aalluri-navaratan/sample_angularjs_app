@@ -30,7 +30,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+# Utilities
+gem 'hash_builder', git: 'https://github.com/CQQL/hash_builder.git'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

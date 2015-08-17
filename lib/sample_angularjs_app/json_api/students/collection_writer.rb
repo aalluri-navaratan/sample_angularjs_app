@@ -8,6 +8,10 @@ module SampleAngularjsApp
             build_single_resource(student)
           end
         end
+      
+        def build_linked_resources
+          {}
+        end
       end
     end
   end

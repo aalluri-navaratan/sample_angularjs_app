@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/CQQL/hash_builder.git
+  revision: 42ea44f1a7864f38c398f3dff9f26715a63ac4e0
+  specs:
+    hash_builder (1.1.0)
+      exec_env
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -59,6 +66,7 @@ GEM
     database_cleaner (1.4.1)
     debug_inspector (0.0.2)
     erubis (2.7.0)
+    exec_env (0.1.0)
     execjs (2.5.2)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
@@ -152,6 +160,7 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   database_cleaner
+  hash_builder!
   jbuilder (~> 2.0)
   jquery-rails
   json_expressions

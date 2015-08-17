@@ -4,21 +4,25 @@ module SampleAngularjsApp
       # Writer class
       class Writer < SampleAngularjsApp::JsonApi::BaseWriter
         def build_links
-          HashBuilder.build(scope: self) do
-            send('SampleAngularjsApp.students') do
-              href 'http://localhost/api/v1/students'
-              type 'students'
-            end
-          end
+          {}
         end
 
         def build_single_resource(student)
           HashBuilder.build(scope: self) do
+            id student.id
             sid student.sid
             sname student.sname
             semail student.semail
-            smobile student.smobile
+            updated_at student.updated_at
           end
+        end
+
+        def build_links_with_ids(_students)
+          {}
+        end
+
+        def build_linked_studentss
+          {}
         end
       end
     end

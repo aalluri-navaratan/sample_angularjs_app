@@ -10,6 +10,11 @@ Rails.application.routes.draw do
   root "students#index"
   resources :students
   resources :users
+   namespace :api do
+    namespace :v1 do
+    resources :students
+    end
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
