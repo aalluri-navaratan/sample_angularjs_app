@@ -1,1 +1,62 @@
-<h1>Empty</h1>
+
+<div ng-controller="studentsCtrl" ng-show="students_initialized">
+<div class="page">{{students}}
+  <section class="panel panel-default">
+    <div class="panel-body">
+      <div data-ui-wizard-form>
+        <h1>Show Students</h1>
+        <div class="checking-user" ng-show="true">
+          <div ng-include="'/assets/sample_angularjs_app/views/students/add_student.html'"></div>
+        </div>
+        <div ng-show="students.list.length == 0" class="message-margin">
+          <div class="aui-message closeable" >
+          Oops! There are no more Announcements for you under to view.
+          </div>
+        </div>
+        <div>
+            <div class="container col-md-12 course-info">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <strong>Students Info</strong>
+                </div>
+                <div class="panel-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>SId</th>
+                        <th>SName</th>
+                        <th>SEmail</th>
+                        <th>SMobile</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>BID001</td>
+                        <td>Mathmetics-morning</td> 
+                        <td>10-07-2014</td>
+                        <td>10-08-2014</td>
+                      </tr>
+                      <tr>
+                        <td>BID002</td>
+                        <td>Mathmetics-afternoon</td>  
+                        <td>10-07-2014</td>
+                        <td>10-08-2014</td>
+                      </tr>
+                    
+                      <tr>
+                        <td>BID003</td>
+                        <td>Mathmetics-evening</td> 
+                        <td>10-06-2014</td>
+                        <td>10-07-2014</td>
+                      </tr>   
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

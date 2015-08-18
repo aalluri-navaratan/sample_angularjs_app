@@ -1,4 +1,4 @@
-var routerApp = angular.module('routerApp', ['ui.router', 'ui.router.state']);
+var routerApp = angular.module('routerApp', ['ui.router', 'ui.router.state', 'ui.bootstrap', 'ngAnimate']);
 routerApp.config(function($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('/students');
 	$stateProvider

@@ -1,3 +1,4 @@
+
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -16,7 +17,12 @@
 
 // *** ANGULAR JS PLUGINS ***
 //= require bootstrap/dist/js/bootstrap
+//= require bootstrap/js/modal
 //= require angular/angular
+//= require angular-bootstrap/ui-bootstrap
+//= require angular-animate/angular-animate
+
+//= require angular-bootstrap/ui-bootstrap-tpls
 //= require angular-ui-router/release/angular-ui-router
 //= require bootstrap/dist/js/bootstrap
 //= require jquery.validate/dist/jquery.validate

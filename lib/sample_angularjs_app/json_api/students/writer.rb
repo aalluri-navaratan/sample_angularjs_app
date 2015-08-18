@@ -13,7 +13,7 @@ module SampleAngularjsApp
             sid student.sid
             sname student.sname
             semail student.semail
-            updated_at student.updated_at
+            smobile student.smobile
           end
         end
 

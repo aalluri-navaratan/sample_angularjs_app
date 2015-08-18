@@ -1,6 +1,5 @@
 <section>
-  <div data-ng-controller="studentsCtrl">
-  <script type="text/ng-template" id="add_student.html">
+  <div data-ng-controller="studentsCtrl">{{students}}
     <div ng-hide="students.single.id" class="modal-header">
       <h3>Students</h3>
     </div>
@@ -28,7 +27,11 @@
           <div class="form-group" ng-class="{'has-error' : student_form.smobile.$invalid && (!student_form.smobile.$pristine || submitted) }">
             <label for="">SMobile</label>
             <span class="glyphicon glyphicon-asterisk"></span>
-            <div text-angular data-ng-model="students.single.smobile" required name= "smobile"></div>
+             <input type="text"
+              class="form-control"
+              required name= "smobile"
+              data-ng-model="students.single.smobile"
+              ng-maxlength="45">
             <div class="help-block" ng-show="student_form.smobile.$invalid && (!student_form.smobile.$pristine || submitted)">SMobile is required. 
             </div>  
           </div>
@@ -45,9 +48,8 @@
         </button>
       </div>
     </div>
-  </script>
   </div>
   <div class="medium success info btn" ng-click="open()">
-    <button ng-click="edit_student(student.id)">Create Student</button>
+    <button ng-click="open()">Create Student</button>
   </div>
 </section>

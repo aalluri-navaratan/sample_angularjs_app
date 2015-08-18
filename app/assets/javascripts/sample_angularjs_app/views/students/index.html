@@ -1,4 +1,56 @@
-<div ng-controller="studentCtrl">
-	<h1>Student Index</h1>{{students}}
+<div ng-controller="studentsCtrl" ng-show="students_initialized">
+  <div class="col-md-12 pull-left">
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+        </div>
+        <div class="panel-body">
+          <div class="col-md-12">
+            </div>
+            <div ng-show="students.list.length == 0" class="message-margin">
+              <div class="aui-message closeable" >
+                Oops! There are no more Announcements for you under to view.
+              </div>
+            </div>
+            <div class="message-margin" ng-repeat="student in students.list | orderBy:'id':true">
+              <div class="announcement_body - I">
+                <div class="panel panel-default">
+                  <table class="rounded">
+                    <thead>
+                      <tr>
+                        <th>SID</th>
+                        <th>SNAME</th>
+                        <th>SEMAIL</th>
+                        <th>SMOBILE</th>
+                        <th></th>
+                        <td></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{{student.sid}}</td>
+                        <td>{{student.sname}}</td>
+                        <td>{{student.semail}}</td>
+                        <td>{{student.smobile}}</td>
+                        <td><div class="medium secondary info btn" ng-click="edit_student(student.id)">
+                        <button ng-click="edit_student(student.id)">Edit</button>
+                      </div></td>
+                      <td><div class="medium danger info btn" ng-click="edit_student(student.id)">
+                        <button ng-click="remove_student(student.id)">Delete</button>
+                      </div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="checking-user" ng-show="true">
+                    <div ng-include="'/assets/sample_angularjs_app/views/students/add_student.html'"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
